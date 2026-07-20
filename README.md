@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/api-3.0.0-blue.svg?cacheSeconds=2592000" alt="Version">
   <img src="https://img.shields.io/badge/action-all%20builds-FF9B21" alt="Action">
   <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" alt="Documentation">
-  <img src="https://codecov.io/github/xRookieFight/Reactor/graph/badge.svg?token=84HDP13KC3" alt="Codecov">
+  <img src="https://codecov.io/github/xRookieFight/Reactor/graph/badge.svg?token=BGOJYXIA8S" alt="Codecov">
   <img src="https://img.shields.io/badge/License-LGPL--3-yellow.svg" alt="License">
 </p>
 
