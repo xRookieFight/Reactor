@@ -1,0 +1,6 @@
+name: Reactor
+main: com.xrookiefight.reactor.Reactor
+version: ${version}
+api: 3.0.0
+author: xRookieFight
+description: "Minecraft: Java Edition cross-play plugin for PowerNukkitX"
