@@ -1,5 +1,5 @@
 [versions]
-powernukkitx = "nightly-SNAPSHOT"
+powernukkitx = "2.0.0-SNAPSHOT"
 annotations = "26.0.2"
 lombok = "1.18.42"
 junit = "6.0.0"
