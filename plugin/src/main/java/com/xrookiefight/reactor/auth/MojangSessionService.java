@@ -24,17 +24,27 @@ import java.util.concurrent.CompletableFuture;
 @Slf4j
 public class MojangSessionService {
 
-    private static final String HAS_JOINED_URL = "https://sessionserver.mojang.com/session/minecraft/hasJoined?username=%s&serverId=%s";
+    private static final String DEFAULT_HAS_JOINED_URL = "https://sessionserver.mojang.com/session/minecraft/hasJoined";
 
     @Getter
     private final KeyPair keyPair = CryptUtil.generateKeyPair();
+
+    private final String hasJoinedUrl;
 
     private final HttpClient httpClient = HttpClient.newBuilder()
             .connectTimeout(Duration.ofSeconds(10))
             .build();
 
+    public MojangSessionService() {
+        this(DEFAULT_HAS_JOINED_URL);
+    }
+
+    public MojangSessionService(String hasJoinedUrl) {
+        this.hasJoinedUrl = hasJoinedUrl;
+    }
+
     public CompletableFuture<GameProfile> hasJoined(String username, String serverIdHash) {
-        final String url = HAS_JOINED_URL.formatted(
+        final String url = (hasJoinedUrl + "?username=%s&serverId=%s").formatted(
                 URLEncoder.encode(username, StandardCharsets.UTF_8),
                 URLEncoder.encode(serverIdHash, StandardCharsets.UTF_8)
         );

@@ -22,6 +22,8 @@ dependencies {
 
     testImplementation(platform(libs.junit.bom))
     testImplementation(libs.junit.jupiter)
+    testImplementation(libs.mockito)
+    testImplementation(libs.powernukkitx)
     testRuntimeOnly(libs.junit.platform.launcher)
 }
 

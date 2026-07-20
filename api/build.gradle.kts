@@ -8,6 +8,7 @@ dependencies {
 
     compileOnly(libs.powernukkitx)
     compileOnly(libs.bundles.annotations)
+    testCompileOnly(libs.bundles.annotations)
 
     testImplementation(platform(libs.junit.bom))
     testImplementation(libs.junit.jupiter)

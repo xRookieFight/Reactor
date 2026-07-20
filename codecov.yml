@@ -28,3 +28,18 @@ comment:
   layout: "reach, diff, flags, files"
   behavior: default
   require_changes: false
+
+# Integration-only classes, they need a live PowerNukkitX server,
+# an initialized Via runtime or a real RakNet connection to execute
+ignore:
+  - "plugin/src/main/java/com/xrookiefight/reactor/Reactor.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/network/ReactorViaCodec.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/proxy/ReactorProxyServer.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/proxy/session/**"
+  - "plugin/src/main/java/com/xrookiefight/reactor/proxy/client2proxy/**"
+  - "plugin/src/main/java/com/xrookiefight/reactor/proxy/proxy2server/**"
+  - "plugin/src/main/java/com/xrookiefight/reactor/protocol/ReactorProtocolTranslator.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/protocol/platform/ReactorViaPlatform.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/protocol/platform/ReactorViaPlatformLoader.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/protocol/platform/ReactorViaLegacyPlatform.java"
+  - "plugin/src/main/java/com/xrookiefight/reactor/protocol/provider/ReactorSkinProvider.java"
