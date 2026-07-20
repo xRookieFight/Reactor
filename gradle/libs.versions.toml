@@ -1,8 +1,8 @@
 [versions]
 powernukkitx = "nightly-SNAPSHOT"
 annotations = "26.1.0"
-lombok = "1.18.42"
-junit = "6.0.0"
+lombok = "1.18.46"
+junit = "6.1.2"
 
 [libraries]
 powernukkitx = { group = "org.powernukkitx", name = "server", version.ref = "powernukkitx" }
@@ -16,4 +16,4 @@ junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform
 annotations = ["jetbrains-annotations"]
 
 [plugins]
-shadow = { id = "com.gradleup.shadow", version = "9.0.0" }
+shadow = { id = "com.gradleup.shadow", version = "9.6.0" }
