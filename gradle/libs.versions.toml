@@ -3,6 +3,13 @@ powernukkitx = "nightly-SNAPSHOT"
 annotations = "26.1.0"
 lombok = "1.18.46"
 junit = "6.1.2"
+viaversion = "5.11.0"
+viabackwards = "5.11.0"
+viarewind = "4.1.3"
+vialegacy = "3.0.16"
+viabedrock = "0.0.29-SNAPSHOT"
+netminecraft = "3.1.6"
+raknet = "1.6.1"
 
 [libraries]
 powernukkitx = { group = "org.powernukkitx", name = "server", version.ref = "powernukkitx" }
@@ -11,9 +18,17 @@ lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" 
 junit-bom = { group = "org.junit", name = "junit-bom", version.ref = "junit" }
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter" }
 junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+viaversion = { group = "com.viaversion", name = "viaversion-common", version.ref = "viaversion" }
+viabackwards = { group = "com.viaversion", name = "viabackwards-common", version.ref = "viabackwards" }
+viarewind = { group = "com.viaversion", name = "viarewind-common", version.ref = "viarewind" }
+vialegacy = { group = "net.raphimc", name = "ViaLegacy", version.ref = "vialegacy" }
+viabedrock = { group = "net.raphimc", name = "ViaBedrock", version.ref = "viabedrock" }
+netminecraft = { group = "net.raphimc.netminecraft", name = "all", version.ref = "netminecraft" }
+raknet = { group = "dev.kastle.netty", name = "netty-transport-raknet", version.ref = "raknet" }
 
 [bundles]
 annotations = ["jetbrains-annotations"]
+viastack = ["viaversion", "viabackwards", "viarewind", "vialegacy", "viabedrock"]
 
 [plugins]
 shadow = { id = "com.gradleup.shadow", version = "9.6.0" }

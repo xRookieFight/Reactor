@@ -12,4 +12,6 @@ public interface ReactorApi {
     String getVersion();
 
     boolean isReady();
+
+    int getConnectedJavaPlayerCount();
 }

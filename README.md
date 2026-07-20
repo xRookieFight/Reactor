@@ -20,7 +20,7 @@
 
 ## Purpose
 
-Reactor is a PowerNukkitX plugin that enables Minecraft: Java Edition players to join Bedrock Edition servers through Geyser. It aims to provide seamless cross-play support while integrating naturally with the PowerNukkitX ecosystem.
+Reactor is a PowerNukkitX plugin that enables Minecraft: Bedrock Edition servers to allow Java Edition players. It aims to provide seamless cross-play support while integrating naturally with the PowerNukkitX ecosystem.
 
 ## Features
 
@@ -55,6 +55,21 @@ If you'd like to contribute:
 4. Submit a Pull Request.
 
 Please follow the project's coding style and keep pull requests focused on a single change whenever possible.
+
+## Credits
+
+Reactor is built on top of the amazing Via* ecosystem and related projects:
+
+- [ViaVersion](https://github.com/ViaVersion/ViaVersion) - core protocol translation between Java Edition versions
+- [ViaBackwards](https://github.com/ViaVersion/ViaBackwards) - support for older Java Edition clients
+- [ViaRewind](https://github.com/ViaVersion/ViaRewind) - legacy 1.8.x and 1.7.x client support
+- [ViaLegacy](https://github.com/ViaVersion/ViaLegacy) - ancient client support down to the earliest versions
+- [ViaBedrock](https://github.com/RaphiMC/ViaBedrock) - the heart of the Java to Bedrock protocol translation
+- [ViaProxy](https://github.com/ViaVersion/ViaProxy) - the proxy architecture this plugin is based on
+- [NetMinecraft](https://github.com/RaphiMC/NetMinecraft) - low level Minecraft network protocol implementation
+- [ViAllay](https://github.com/AllayMC/ViAllay) - the AllayMC implementation that inspired this project
+
+Huge thanks to the maintainers of these projects for making cross-play possible.
 
 ## License
 

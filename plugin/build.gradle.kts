@@ -12,6 +12,14 @@ dependencies {
     compileOnly(libs.powernukkitx)
     compileOnly(libs.bundles.annotations)
 
+    implementation(libs.bundles.viastack)
+    implementation(libs.netminecraft) {
+        exclude(group = "com.google.code.gson", module = "gson")
+    }
+    implementation(libs.raknet) {
+        exclude(group = "io.netty")
+    }
+
     testImplementation(platform(libs.junit.bom))
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly(libs.junit.platform.launcher)
@@ -28,7 +36,9 @@ tasks.build {
 }
 
 tasks.processResources {
+    val pluginVersion = project.version.toString()
+    inputs.property("pluginVersion", pluginVersion)
     filesMatching("plugin.yml") {
-        expand("version" to project.version)
+        expand("version" to pluginVersion)
     }
 }

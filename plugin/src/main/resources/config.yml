@@ -1,0 +1,45 @@
+# Reactor Configuration
+# Allows Java Edition players to join PowerNukkitX Bedrock servers
+
+network-settings:
+  # The address to bind the Java Edition listener, 0.0.0.0 listens on all interfaces
+  bind-address: "0.0.0.0"
+  # The port for Java Edition clients to connect, default Java port is 25565
+  bind-port: 25565
+  # Backend connection timeout in milliseconds
+  connect-timeout: 8000
+
+bedrock-backend-settings:
+  # The host of the Bedrock server, usually 127.0.0.1 for the local PowerNukkitX server
+  bedrock-host: "127.0.0.1"
+  # The port of the Bedrock server, default Bedrock port is 19132
+  bedrock-port: 19132
+
+protocol-settings:
+  # Packets larger than this get compressed, -1 disables compression, 0 compresses everything
+  compression-threshold: 256
+  # When enabled translation errors are logged but don't disconnect the player
+  ignore-protocol-translation-errors: false
+  # Suppresses client protocol errors in the console to reduce log spam
+  suppress-client-protocol-errors: false
+
+server-status-settings:
+  # Custom MOTD for the Java server list, empty uses the backend MOTD, supports & color codes
+  motd: ""
+  # Max players shown in the server list, -1 uses the backend value
+  max-players: -1
+
+logging-settings:
+  # Whether to log player IP addresses, disable for privacy compliance
+  log-ips: true
+  # Whether to log server list ping requests
+  log-status-requests: false
+  # Detailed protocol debug logging, generates a lot of output
+  protocol-debug: false
+  # Hides harmless translation warnings from the Via stack (unknown game rules, unhandled parameters etc.)
+  suppress-translation-warnings: true
+
+authentication-settings:
+  # Whether Java clients must authenticate with a valid Minecraft account
+  # Requires waterdogpe mode enabled on the PowerNukkitX server when xbox-auth is on
+  online-mode: false
