@@ -1,7 +1,7 @@
 [versions]
 powernukkitx = "nightly-SNAPSHOT"
 annotations = "26.1.0"
-lombok = "1.18.46"
+lombok = "1.18.48"
 junit = "6.1.2"
 mockito = "5.20.0"
 viaversion = "5.11.0"
