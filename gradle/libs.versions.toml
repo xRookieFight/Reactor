@@ -9,7 +9,7 @@ viabackwards = "5.11.0"
 viarewind = "4.1.3"
 vialegacy = "3.0.16"
 viabedrock = "0.0.29-SNAPSHOT"
-netminecraft = "3.1.6"
+netminecraft = "3.1.7"
 raknet = "1.6.1"
 
 [libraries]
